@@ -12,12 +12,8 @@ const Home = () => {
           <div>
                {/* HERO SECTION  */}
 
-               <div className="hero">
-                    <Carousel>
-                         <img src="https://www.kindpng.com/picc/m/285-2850846_quiz-tiles-letters-red-game-test-scrabble-prepare.png"
-                              className='w-100'
-                              alt="" />
-                    </Carousel>
+               <div className="hero d-flex justify-content-center">
+                  <img className='w-50' src="https://img.freepik.com/premium-vector/online-live-test-exam-with-people-study-computer-desk-table-with-modern-isometric-style-illustration_82472-642.jpg" alt="" />
                </div>
 
                {/* QUIZ SECTION  */}
