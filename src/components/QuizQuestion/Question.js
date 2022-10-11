@@ -1,9 +1,7 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
 import ShowQuestion from '../ShowQuestion/ShowQuestion';
-import { Col, Row, Stack } from 'react-bootstrap';
+import { Col, Row } from 'react-bootstrap';
 
 const Question = () => {
 
