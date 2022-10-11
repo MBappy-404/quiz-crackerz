@@ -26,7 +26,7 @@ const Home = () => {
 
                     <div>
                          <Col>
-                              <div className=' m-5'>
+                              <div className='text-danger play m-5'>
                                    <h1>Are You Ready To Play Quiz ! </h1>
                               </div>
                          </Col>
