@@ -10,6 +10,7 @@ const Home = () => {
      // console.log(qize);
      return (
           <div>
+               {/* HERO SECTION  */}
 
                <div className="hero">
                     <Carousel>
@@ -19,34 +20,40 @@ const Home = () => {
                     </Carousel>
                </div>
 
-               <div className='quiz-container'>
+               {/* QUIZ SECTION  */}
 
-                    <Row  className='d-flex   justify-content-space-between'>
+               <div className='quiz-container m-5'>
+
+                    <div>
+                         <Col>
+                              <div className=' m-5'>
+                                   <h1>Are You Ready To Play Quiz ! </h1>
+                              </div>
+                         </Col>
+                    </div>
+
+                    <Row className='d-flex align-items-center  justify-content-space-between'>
                          <Col xs={12} md={6}>
-                              <div className="quiz-item" >
-                                  <Row xs={1} md={2} className='m-3'>
-                                  {
-                                        quizes.map(quiz => <Quiz
-                                             key={quiz.id}
-                                             quiz={quiz}
-                                        ></Quiz>)
-                                   }
-                                  </Row>
+                              <div className=''>
+                                   <img src='https://www.malwarebytes.com/blog/images/uploads/2018/12/shutterstock_1214717467.jpg' alt="" className='w-100 mb-5' />
                               </div>
                          </Col>
 
-                         <Col xs={12} md={6}>
-                         
-                         <div>
-                              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmaKuvf2kYPI6N_sRTNyxhIU39m4PJrD2JZQ&usqp=CAU" alt="" className='w-100' />
-                         </div></Col>
+                         <Col xs={12} md={6} >
+
+                              <div className="quiz-item" >
+                                   <Row xs={1} md={2} className='d-flex justify-content-center'>
+                                        {
+                                             quizes.map(quiz => <Quiz
+                                                  key={quiz.id}
+                                                  quiz={quiz}
+                                             ></Quiz>)
+                                        }
+                                   </Row>
+                              </div>
+                         </Col>
                     </Row>
-
-
-
                </div>
-
-
           </div>
      );
 };

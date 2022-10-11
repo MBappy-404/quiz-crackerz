@@ -1,5 +1,6 @@
 import React from 'react';
-import { Card, Col, Row } from 'react-bootstrap';
+import { Button, Card, Col, } from 'react-bootstrap';
+import './Quiz.css'
 
 const Quiz = ({ quiz }) => {
 
@@ -7,24 +8,20 @@ const Quiz = ({ quiz }) => {
 
      return (
           <div>
-         
-      
-        <Col>
-          <Card>
-            <Card.Img variant="top" src={logo} className='w-100' />
-            <Card.Body>
-              <Card.Title>{name}</Card.Title>
-              <Card.Text>
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Col>
-      
-   
-     
+
+
+               <Col>
+                    <Card className='mb-3'>
+                         <Card.Img variant="top" src={logo} className='w-100' />
+                         <Card.Body className='d-flex justify-content-between align-items-center m-2'>
+                              <Card.Title>{name}</Card.Title>
+                              <Button variant="outline-primary">Start Quiz</Button>
+                         </Card.Body>
+                    </Card>
+               </Col>
+
+
+
           </div >
      );
 };

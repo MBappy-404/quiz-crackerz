@@ -6,7 +6,7 @@ import './Header.css'
 
 const Header = () => {
      return (
-          <div>
+           
                <Navbar bg="light" expand="lg">
                     <Container>
                          <Navbar.Brand href="#">Quiz Hunter</Navbar.Brand>
@@ -22,7 +22,7 @@ const Header = () => {
                     </Container>
                </Navbar>
 
-          </div>
+        
      );
 };
 
