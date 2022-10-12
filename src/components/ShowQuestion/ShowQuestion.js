@@ -10,10 +10,9 @@ const ShowQuestion = ({ quiz }) => {
 
 
      const handleAnswer = (option) => {
-          const correct = (option.target.innerText);
+          // const correct = (option.target.innerText);
           
-
-          if (correct === correctAnswer) {
+          if (option === correctAnswer) {
                // alert('success')
                toast.success('Correct Answer', { autoClose: 1500 })
 
@@ -21,11 +20,11 @@ const ShowQuestion = ({ quiz }) => {
           }
           else {
                toast.error('Wrong Answer', { autoClose: 1500 })
-               console.log(correct, correctAnswer);
+               // console.log("anwe",correct,"correct", correctAnswer);
           }
      };
      const showAnswer = () => {
-          const correct = correctAnswer;
+          const correct = correctAnswer.innerText;
           toast.success(<h5>{correct}</h5>, { autoClose: 3500 });
      };
      return (
@@ -39,7 +38,7 @@ const ShowQuestion = ({ quiz }) => {
                               </Card.Header>
                               <Card.Body className='option-btn'>
                                    {
-                                        options.map(option => <Button xs={10} sm={10} onClick={(option) => handleAnswer(option)} md={6} className='w-50 m-auto p-3 btn rounded-pill mb-2' variant="primary"> {option}</Button>
+                                        options.map(option => <Button xs={10} sm={10} onClick={() => handleAnswer(option)} md={6} className='w-50 m-auto p-3 btn rounded-pill mb-2' variant="primary"> {option}</Button>
 
                                         )
                                    }
