@@ -24,8 +24,6 @@ const Home = () => {
                {/* QUIZ SECTION  */}
 
                <div className='quiz-container m-5'>
-
-
                     <Col>
                          <div className='text-danger play m-5'>
                               <h1> GET START QUIZ ! </h1>
