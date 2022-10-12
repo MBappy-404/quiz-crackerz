@@ -10,7 +10,7 @@ const ShowQuestion = ({ quiz }) => {
 
 
      const handleAnswer = (option) => {
-          // const correct = (option.target.innerText);
+     
           
           if (option === correctAnswer) {
                // alert('success')
@@ -20,12 +20,11 @@ const ShowQuestion = ({ quiz }) => {
           }
           else {
                toast.error('Wrong Answer', { autoClose: 1500 })
-               // console.log("anwe",correct,"correct", correctAnswer);
+               navigator.vibrate(200);
           }
      };
      const showAnswer = () => {
-          const correct = correctAnswer.innerText;
-          toast.success(<h5>{correct}</h5>, { autoClose: 3500 });
+          toast.success(<h5>{correctAnswer}</h5>, { autoClose: 3500 });
      };
      return (
           <div>
