@@ -1,4 +1,16 @@
 .play h1{
-     font-size: 40px;
      font-weight: 700;
+      
+}
+
+@media screen and (max-width: 700px) {
+
+     .play h1{
+          font-size: 20px;
+          font-weight: 700;
+           
+     }
+
+
+     
 }

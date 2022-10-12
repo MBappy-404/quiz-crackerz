@@ -16,8 +16,8 @@ const Quiz = ({ quiz }) => {
           <div>
 
 
-               <Col>
-                    <Card className='mb-3'>
+               <Col className='d-flex  justify-content-center'>
+                    <Card className='mb-3 card shadow w-75 m-3'>
                          <Card.Img variant="top" src={logo} className='w-100' />
                          <Card.Body className='d-flex  justify-content-between align-items-center m-2'>
                               <Card.Title> {name} </Card.Title>

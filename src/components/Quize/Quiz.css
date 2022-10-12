@@ -4,3 +4,11 @@ img.card-img-top.w-100 {
      
 
  }
+
+ @media screen and (max-width: 700px) {
+
+    .card{
+        margin: 0;
+    }
+    
+ }
